@@ -1,0 +1,154 @@
+.cart {
+  position: relative;
+  border: 1px solid #ccc;
+}
+#product {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px #ccc;
+  padding: 15px 10px;
+}
+
+.amount span {
+  color: crimson;
+  padding: 0 20px;
+}
+.amount .count {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #555;
+  outline: none;
+  background: transparent;
+}
+.cart {
+  min-width: 300px;
+  min-height: 400px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 2px 8px 20px #ddd;
+  margin: 10px;
+  transition: 0.5s linear;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.details-img {
+  width: 20%;
+}
+.delete button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: crimson;
+  font-weight: 900;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 17pt;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.content-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card h2:hover {
+  color: crimson;
+}
+.card span {
+  color: crimson;
+  font-size: 18px;
+}
+.card p {
+  color: #000;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.content {
+  width: 35%;
+}
+.content .row {
+  width: 100%;
+  justify-content: space-between;
+}
+.filtr {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-buttons {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-buttons > button {
+  width: 15%;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: white;
+  font-size: 16.5px;
+  font-weight: 450;
+  margin-left: 20px;
+}
+.filtr-search input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  outline: none;
+  font-size: 17.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filtr-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: 406px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 650px) {
+  .content .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content .row h2 {
+    font-size: 18px;
+  }
+  .content .row span {
+    font-size: 15px;
+  }
+  .total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .total button {
+    width: 90%;
+    letter-spacing: 1.5px;
+  }
+}
